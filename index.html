@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Precautions to be taken during COVID-19</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="css/style-precautions.css">
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"></script>
+
+    <script src="js/onevent-precautions.js"></script>
+    <script src="js/form-validator.js"></script>
+</head>
+<body>
+
+  <nav>
+    <label class="logo">
+      <a href="http://asciieducation.com/" target="_blank"><img src="images/ascii-edu.png" alt="ascii-edu"></a>
+      <a href="http://asciieducation.com/" target="_blank">Ascii Education</a> 
+    </label>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li id="form-btn"><a>Contact</a></li>
+      <li id="see-more-info-btn"><a>See more about COVID-19</a></li>
+    </ul>
+    <label id="icon">
+      <i class="fas fa-bars"></i>
+    </label>
+  </nav>
+
+
+  <div class="page-wrapper">
+    <div class="page-title">Precautions to be Taken in COVID-19</div>
+
+    <!-- Slide show -->
+    <div class="slideshow-container">
+      <div class="slideshow">
+
+        <!-- stay home-->
+        <div class="slideshow-item">
+          <img src="slideshow/stay-home.jpg" alt="stay home">
+        </div>
+
+        <!-- wash hands-->
+        <div class="slideshow-item">
+          <img src="slideshow/wash-hands.jpg" alt="wash hands">
+          <div class="slideshow-item-txt">Always wash your hands throughly</div>
+        </div>
+
+        <!-- wear mask-->
+        <div class="slideshow-item">
+          <img src="slideshow/wear-mask.jpg" alt="wear mask">
+        </div>  
+
+        <!-- social distancing-->
+        <div class="slideshow-item">
+            <img src="slideshow/social distancing.jpg" alt="social distancing">
+        </div>
+        
+        <!-- avoid touching-->
+        <div class="slideshow-item">
+            <img src="slideshow/avoid-touch.jpg" alt="avoid-touch">   
+        </div>
+
+      </div>
+    </div>
+
+    <div class="grid-container">
+      <div class="row">
+        <div class="column">
+          <div class="content">
+            <img src="images/soap-sanitizer.jpg" alt="soap & water" style="width:100%">
+            <h3>Why to wash hands thoroughly?</h3>
+            <p>It is important that you keep your hands clean at all times to prevent diseases, and especially during any viral influenza-like outbreak.
+              You can get germs on your hands by touching anything that may have got germs on it after an infected person coughed or sneezed on it, 
+              or after it came into contact with another object that was contaminated. Once you get these germs on to your hands, you can get sick thereby
+              washing your hands can break the chain of transmission.
+            </p>
+            <div class="see-page"><a href="wash_hands.html">Read More</a></div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="images/masks-use-public.jpg" alt="use mask public" style="width:100%">
+            <h3>Why to use Mask?</h3>
+            <p>Now recommended for the public to wear cotton masks. This guidance is not intended to protect the wearer, 
+              but to help prevent the wearer from spreading the virus to others if they are an unknown asymptomatic carrier.
+              When one exhales, coughs or sneezes, the particles are fairly directional and directed into the mask. One study estimated that cloth masks can stop up to 90% of droplets.
+              And new modeling is reported to show that if over 80% of the public wears a mask, the epidemic will markedly decrease.
+            </p>
+            <div class="see-page"><a href="masks_safety.html">Read More</a></div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="images/hygiene.jpg" alt="hygiene" style="width:100%">
+            <h3>Public hygine is Important :</h3>
+            <p>In the outbreak of COVID-19, it is necessary to have public hygine & personal hygine.
+              Also with this you should have to refrain yourself from doing some activities. You should have to
+              be clam in this pandamic.
+            </p>
+            <div class="see-page"><a href="hygiene.html">Read More</a></div>
+          </div>
+        </div>
+      <!-- END GRID -->
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+
+  <div class="footer">
+    <div class="footer-top">
+     <ul class="social-media">
+        <li><a href="#" id="fb"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="#" id="insta"><i class="fab fa-instagram-square"></i></a></li>
+        <li><a href="#" id="linkedin"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="http://asciieducation.com/" target="_blank" id="web"><i class="fas fa-globe"></i></a></li>
+     </ul>
+    </div>
+    <div class="footer-bottom">
+      <p><i class="fas fa-copyright"> Copyright 2020 ASCII Education | All Rights Reserved</i></p>
+    </div>
+  </div>
+
+
+  <!-- form -->
+  <form action="" method="POST" class="float-tab" id="form" >
+    <i class="fas fa-times closebtn" id="closebtn1"></i>
+    <ul>
+      <li>
+        <input class="textbox" type="text" required="true" name="user-name" id="name" placeholder="Your Name...">
+      </li>
+      <li>
+        <input class="textbox" type="email" required="true" name="user-email" id="email" placeholder="Your Email-ID...">
+      </li>
+      <li>
+        <textarea class="textbox text-area" required="true" rows="4"name="user-message" id="message" placeholder="Your Message..."></textarea>
+      </li>
+      <li style="letter-spacing: 2em;">
+        <button class="form-btn submit" type="submit" id="sent-msg">
+          <i class="fas fa-paper-plane " style="margin-right: 10px;"></i>Sent
+        </button>
+        <button class="form-btn" type="reset" id="reset-form">
+          <i class="fas fa-undo " style="margin-right: 10px;"></i></i>Clear
+        </button>
+      </li>
+    </ul>  
+  </form>
+
+  <!-- see more -->
+  <div class="float-tab" id="see-more-info" >
+    <i class="fas fa-times closebtn" id="closebtn2"></i>
+    <ul>
+      <li>
+        <a href="#">How Covid-19 Spread all over World?</a>
+      </li>
+      <li>
+        <a href="#">Reason of Spreading COVID-19</a>
+      </li>
+      <li>
+        <a href="#">Effect of Covid-19 on Education</a>
+      </li>
+      <li>
+        <a href="#">Effect of Covid-19 on Economy</a>
+      </li>
+      <li>
+        <a href="#">Effect of Covid-19 on Workers</a>
+      </li>
+      <li>
+        <a href="#">Important Roles of People in Covid-19</a>
+      </li>
+    </ul>  
+  </div>
+</body>
+</html>
